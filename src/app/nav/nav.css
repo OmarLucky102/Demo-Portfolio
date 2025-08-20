@@ -1,0 +1,14 @@
+/* Active link style */
+.active-link {
+  @apply text-cyan-400 font-semibold relative;
+}
+
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(34 211 238); /* cyan-400 */
+}

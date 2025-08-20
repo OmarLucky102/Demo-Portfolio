@@ -1,0 +1,99 @@
+<nav
+  class="sticky top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md shadow-md z-50"
+>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Left: Your name/logo -->
+    <a
+      href="/"
+      class="text-2xl font-bold text-cyan-400 hover:text-white transition-colors duration-300"
+    >
+      Omar AbdElaty
+    </a>
+
+    <!-- Right: Navigation links (desktop) -->
+    <ul class="hidden md:flex space-x-10 text-lg font-medium">
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="text-cyan-400 font-semibold border-b-2 border-cyan-400"
+          class="text-gray-300 hover:text-cyan-400 transition duration-300 relative hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/portfolio"
+          routerLinkActive="text-cyan-400 font-semibold border-b-2 border-cyan-400"
+          class="text-gray-300 hover:text-cyan-400 transition duration-300 relative hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]"
+        >
+          Portfolio
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/resume"
+          routerLinkActive="text-cyan-400 font-semibold border-b-2 border-cyan-400"
+          class="text-gray-300 hover:text-cyan-400 transition duration-300 relative hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]"
+        >
+          Resume
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/contact"
+          routerLinkActive="text-cyan-400 font-semibold border-b-2 border-cyan-400"
+          class="text-gray-300 hover:text-cyan-400 transition duration-300 relative hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="md:hidden">
+      <button
+        (click)="toggleMenu()"
+        class="text-gray-300 hover:text-cyan-400 focus:outline-none text-3xl transition-transform duration-300"
+        aria-label="Toggle menu"
+      >
+        <span *ngIf="!menuOpen">☰</span>
+        <span *ngIf="menuOpen">✖</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div
+    [ngClass]="{
+      'max-h-0 opacity-0 overflow-hidden': !menuOpen,
+      'max-h-96 opacity-100': menuOpen
+    }"
+    class="md:hidden bg-gray-800/95 rounded-b-2xl shadow-lg px-6 pb-4 space-y-3 transition-all duration-500 ease-in-out"
+  >
+    <a
+      routerLink="/home"
+      routerLinkActive="text-cyan-400 font-semibold"
+      class="block text-gray-300 hover:text-cyan-400 transition"
+      >Home</a
+    >
+    <a
+      routerLink="/portfolio"
+      routerLinkActive="text-cyan-400 font-semibold"
+      class="block text-gray-300 hover:text-cyan-400 transition"
+      >Portfolio</a
+    >
+    <a
+      routerLink="/resume"
+      routerLinkActive="text-cyan-400 font-semibold"
+      class="block text-gray-300 hover:text-cyan-400 transition"
+      >Resume</a
+    >
+    <a
+      routerLink="/contact"
+      routerLinkActive="text-cyan-400 font-semibold"
+      class="block text-gray-300 hover:text-cyan-400 transition"
+      >Contact</a
+    >
+  </div>
+</nav>

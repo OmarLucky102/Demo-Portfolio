@@ -1,0 +1,54 @@
+<section class="min-h-screen flex items-center justify-center px-6 py-12">
+  <div
+    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+  >
+    <!-- ✍️ Left: About Me -->
+    <div class="text-gray-300 space-y-6 order-1 md:order-1">
+      <h1 class="text-4xl md:text-5xl font-bold text-white">
+        Hi, I’m <span class="text-cyan-400">Omar AbdElaty</span>
+      </h1>
+      <h2 class="text-xl font-medium text-gray-400">
+        Backend Engineer | API Specialist | Problem Solver
+      </h2>
+      <p class="leading-relaxed text-gray-400">
+        I’m a backend developer passionate about building
+        <span class="text-cyan-400">scalable APIs</span>,
+        <span class="text-cyan-400">secure systems</span>, and
+        <span class="text-cyan-400">high-performance apps</span>. My work
+        focuses on clean architecture, maintainability, and delivering real
+        business value.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a
+          routerLink="/portfolio"
+          class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-cyan-500 text-white font-semibold shadow-lg hover:bg-cyan-400 hover:shadow-cyan-500/30 transition text-center"
+        >
+          View Portfolio
+        </a>
+        <a
+          routerLink="/contact"
+          class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl border border-cyan-500 text-cyan-400 font-semibold hover:bg-cyan-500/10 hover:text-cyan-300 transition text-center"
+        >
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <!-- 👤 Right: Profile Image -->
+    <div class="flex justify-center order-2 md:order-2">
+      <div class="relative group">
+        <img
+          src="https://i.postimg.cc/L67qg0Xn/6107b853-3d20-4e4c-901d-9d27846aeb46.png"
+          alt="Omar AbdElaty"
+          class="w-64 sm:w-80 object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] group-hover:scale-110 group-hover:translate-y-[-10px] transition-all duration-700 ease-out"
+        />
+        <!-- Futuristic aura -->
+        <div
+          class="absolute inset-0 bg-cyan-400/20 blur-[100px] opacity-0 group-hover:opacity-100 transition duration-700"
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>

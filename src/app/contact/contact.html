@@ -1,0 +1,93 @@
+<div
+  class="container mx-auto px-4 py-12 flex flex-col items-center text-center"
+>
+  <h2 class="text-4xl font-bold text-white mb-4">Contact Me</h2>
+  <p class="text-gray-400 mb-8">
+    Contact me at
+    <span class="text-cyan-400 font-semibold">omarabdelaty101@gmail.com</span>
+    or reach me through my social profiles below.
+  </p>
+
+  <!-- Social Links -->
+  <div class="flex gap-6 mb-10">
+    <a
+      href="https://www.linkedin.com/in/omarlucky102/"
+      target="_blank"
+      class="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
+    >
+      <!-- LinkedIn icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.25h-3v-5.5c0-1.379-1.121-2.5-2.5-2.5s-2.5 1.121-2.5 2.5v5.5h-3v-10h3v1.388c.837-1.206 2.309-2.138 3.993-2.138 2.485 0 4.507 2.022 4.507 4.507v6.243z"
+        />
+      </svg>
+      LinkedIn
+    </a>
+
+    <a
+      href="https://github.com/OmarLucky102"
+      target="_blank"
+      class="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2"
+    >
+      <!-- GitHub icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 0C5.371 0 0 5.372 0 12c0 5.302 3.438 9.799 8.207 11.387.6.111.793-.261.793-.579 0-.285-.01-1.04-.016-2.04-3.338.727-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.085 1.839 1.238 1.839 1.238 1.07 1.834 2.807 1.304 3.492.997.108-.774.419-1.305.762-1.605-2.665-.304-5.467-1.334-5.467-5.931 0-1.31.468-2.381 1.236-3.22-.124-.303-.536-1.527.117-3.183 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.043.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.656.243 2.88.119 3.183.77.84 1.236 1.91 1.236 3.22 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.604-.015 2.898-.015 3.293 0 .32.192.694.799.576C20.565 21.796 24 17.298 24 12c0-6.628-5.372-12-12-12z"
+        />
+      </svg>
+      GitHub
+    </a>
+  </div>
+
+  <!-- Contact Form -->
+  <form
+    (ngSubmit)="submitForm()"
+    class="w-full max-w-lg bg-gray-900 p-8 rounded-2xl shadow-lg border border-gray-700"
+  >
+    <div class="mb-4">
+      <label class="block text-gray-300 font-semibold mb-2">Name</label>
+      <input
+        [(ngModel)]="name"
+        name="name"
+        required
+        class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-cyan-400"
+      />
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-300 font-semibold mb-2">Email</label>
+      <input
+        [(ngModel)]="email"
+        type="email"
+        name="email"
+        required
+        class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-cyan-400"
+      />
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-300 font-semibold mb-2">Message</label>
+      <textarea
+        [(ngModel)]="message"
+        name="message"
+        rows="5"
+        required
+        class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-cyan-400"
+      ></textarea>
+    </div>
+    <button
+      type="submit"
+      class="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-cyan-500/30 transition"
+    >
+      Send Message
+    </button>
+  </form>
+</div>
