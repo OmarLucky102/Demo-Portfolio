@@ -1,16 +1,16 @@
-<section class="min-h-screen flex items-center justify-center px-6 py-12">
+<section class="h-screen pt-20 flex items-center justify-center px-6">
   <div
-    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+    class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center h-full"
   >
     <!-- ✍️ Left: About Me -->
-    <div class="text-gray-300 space-y-6 order-1 md:order-1">
-      <h1 class="text-4xl md:text-5xl font-bold text-white">
+    <div class="text-gray-300 space-y-4">
+      <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight">
         Hi, I’m <span class="text-cyan-400">Omar AbdElaty</span>
       </h1>
-      <h2 class="text-xl font-medium text-gray-400">
+      <h2 class="text-base md:text-2xl font-medium text-gray-400">
         Backend Engineer | API Specialist | Problem Solver
       </h2>
-      <p class="leading-relaxed text-gray-400">
+      <p class="leading-relaxed text-gray-400 text-sm md:text-base">
         I’m a backend developer passionate about building
         <span class="text-cyan-400">scalable APIs</span>,
         <span class="text-cyan-400">secure systems</span>, and
@@ -20,7 +20,7 @@
       </p>
 
       <!-- CTA Buttons -->
-      <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      <div class="flex flex-col sm:flex-row gap-4">
         <a
           routerLink="/portfolio"
           class="px-6 py-3 sm:px-8 sm:py-4 rounded-xl bg-cyan-500 text-white font-semibold shadow-lg hover:bg-cyan-400 hover:shadow-cyan-500/30 transition text-center"
@@ -37,16 +37,16 @@
     </div>
 
     <!-- 👤 Right: Profile Image -->
-    <div class="flex justify-center order-2 md:order-2">
-      <div class="relative group">
+    <div class="flex justify-center h-full">
+      <div class="relative group flex items-center">
         <img
           src="https://i.postimg.cc/L67qg0Xn/6107b853-3d20-4e4c-901d-9d27846aeb46.png"
           alt="Omar AbdElaty"
-          class="w-64 sm:w-80 object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] group-hover:scale-110 group-hover:translate-y-[-10px] transition-all duration-700 ease-out"
+          class="max-h-[70%] w-auto object-contain drop-shadow-[0_0_25px_rgba(6,182,212,0.6)] group-hover:scale-105 group-hover:translate-y-[-6px] transition-all duration-500 ease-out"
         />
         <!-- Futuristic aura -->
         <div
-          class="absolute inset-0 bg-cyan-400/20 blur-[100px] opacity-0 group-hover:opacity-100 transition duration-700"
+          class="absolute inset-0 bg-cyan-400/20 blur-[90px] opacity-0 group-hover:opacity-100 transition duration-500"
         ></div>
       </div>
     </div>
